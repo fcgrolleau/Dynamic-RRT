@@ -17,11 +17,19 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 - The **Learning** folder includes code related to the section titled “Learning an optimal strategy” in the paper. It contains the following files.
 
- `figure_2.R` implements the toy example given in the paper and repoduces Figure 2
+ `dataprep_dev.R` details the preprocessing and multiple imputation of the MIMIC data.
+
+ `data_description_dev.R` reproduces Table 1 and Figure S3 (A) for MIMIC.
  
- `boot_func_new_itr.R` contains the bootstrap functions used for the new ITR situation application
- 
- `mimic_new_itr.R` reproduces Figure 5 for the new ITR situation application
+ `dWOLS.R` details the dWOLS estimation procedure optimal strategy learning in the MIMIC data.
+
+ `figS2_A.R` reproduces Figure S2 (A) for MIMIC (Sankey diagram).
+
+ `figS2_B.R` reproduces Figure S2 (B) for MIMIC (Sankey diagram).
+
+ `export_feather.R` export imputed dataframes as feather files for downstream use in python.
+
+ `functions.R` contains handy functions `defactorize` and `rubinr` to ”“defactorize” a dataframe and compute Rubin's rule respectively. 
 
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper. It contains the following files.
 
