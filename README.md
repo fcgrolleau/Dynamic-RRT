@@ -77,7 +77,7 @@ Sankey diagrams were produced with the files corresponding to Figure 3 and S2 me
 
 ### Bootstrapping
 
-Bootstrapping was conducted with the `Speedboot` Python library that we developed during the course of this study. The library is available on <a href="https://pypi.org/project/speedboot/">Pypi</a> with documentation accessible <a href="https://github.com/fcgrolleau/speedboot">here</a>.
+Bootstrapping was performed with the `Speedboot` Python library that we developed during the course of this study. The library is available on <a href="https://pypi.org/project/speedboot/">Pypi</a> with documentation accessible <a href="https://github.com/fcgrolleau/speedboot">here</a>.
 
 ### Decision support system
 <a href="http://dynamic-rrt.eu"><img src="https://fcgrolleau.github.io/Dynamic-RRT/Shiny/img/img.jpg"/></a>
