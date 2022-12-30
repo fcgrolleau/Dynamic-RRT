@@ -41,10 +41,12 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 `plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper
 
+- The **Shiny** folder includes the code producing our dynamic decision support system. It contains the following files.
+
 ### Dynamic decision support system
 Available at <a href="http://dynamic-rrt.eu/">http://dynamic-rrt.eu/</a>
-
 The code for this webapp is available in the **Shiny** folder.
+
 ### References
 Grolleau F, Petit F, Gaudry S, Diard E, Quenot JP, Dreyfuss D, Tran VT, and Porcher R.
 <a href="https://medRxiv.org/">*medRxiv*</a>. 2023.
