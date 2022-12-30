@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[18]:
-
-
 ## Importing .feather files into a list of DFs in Python
 from cmath import nan
 import pandas as pd
@@ -34,9 +28,6 @@ for filename in os.listdir(directory):
     list_of_DFs.append(DF)
 
 
-# In[19]:
-
-
 def tau_pi_fun(xs):
     i = 1
     for x in xs:
@@ -45,9 +36,6 @@ def tau_pi_fun(xs):
         else:
             i += 1
     return i
-
-
-# In[20]:
 
 
 def bool_rec_fun(df):
@@ -61,9 +49,6 @@ def bool_rec_fun(df):
     return df
 
 
-# In[21]:
-
-
 def add_treatall(df):
     new_df = df.copy()
     new_df['all_1'] = 1
@@ -71,16 +56,9 @@ def add_treatall(df):
     new_df['all_3'] = 1
     return new_df
 
-
-# In[22]:
-
-
 prep_imp_dfs = [bool_rec_fun(imp_i) for imp_i in list_of_DFs]
 prep_imp_dfs = [add_treatall(imp_i) for imp_i in prep_imp_dfs]
 imp_1 = prep_imp_dfs[0]
-
-
-# In[23]:
 
 
 def n_rrt_fun(imp_1, r_vec):
@@ -91,12 +69,12 @@ def n_rrt_fun(imp_1, r_vec):
     imp_1.loc[imp_1["phi_3"]==1, "r_3"] = 0
     
     # Create reward for a trajectory
-    imp_1['rwd'] = imp_1['hmor']#imp_1[r_vec].apply(lambda x: any(x==1), axis=1)
+    imp_1['rwd'] = imp_1[r_vec].apply(lambda x: any(x==1), axis=1)
     imp_1['rwd_obs'] = imp_1[["a1", "a2", "a3"]].apply(lambda x: any(x==1), axis=1)
 
-    e_1 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')#C=.1)
-    e_2 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')#C=.1)
-    e_3 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')#C=10)
+    e_1 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')
+    e_2 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')
+    e_3 = LogisticRegression(max_iter=2000, solver='lbfgs', penalty='none')
 
     cond_e_1 = pd.Series([True] * len(imp_1))
     cond_e_2 = (imp_1["a1"] == 0) & (imp_1["phi_1"] == 0) 
@@ -107,10 +85,6 @@ def n_rrt_fun(imp_1, r_vec):
     e_var_1 = ["bun_k1", "uo_k1", "pot_k1", "ph_k1"]
     e_var_2 = ["bun_k2", "uo_k2", "pot_k2", "ph_k2"]  
     e_var_3 = ["bun_k3", "uo_k3", "pot_k3", "ph_k3"]
-
-    #e_var_1 = ["bun_k1", "pot_k1", "ph_k1"]#["bun_k1", "uo_k1", "pot_k1", "ph_k1"]
-    #e_var_2 = ["bun_k2", "uo_k2", "pot_k2", "ph_k2"]  
-    #e_var_3 = ["bun_k3", "uo_k3", "pot_k3", "ph_k3"]
 
     e_var_1 = baseline + ["bun_k1", "uo_k1", "pot_k1", "ph_k1"]
     e_var_2 = baseline + ["bun_k2", "uo_k2", "pot_k2", "ph_k2"]  
@@ -145,22 +119,6 @@ def n_rrt_fun(imp_1, r_vec):
     mean_RRT_obs = np.mean( imp_1['hmor'])
     
     return np.array([mean_RRT_pi, mean_RRT_obs]) 
-                           
-
-
-# In[24]:
-
-
-n_rrt_fun(prep_imp_dfs[2], r_vec=['r_1', 'r_2', 'r_3'])
-
-
-# In[25]:
-
-
-n_rrt_fun(prep_imp_dfs[2], r_vec=['all_1', 'all_2', 'all_3'])
-
-
-# In[26]:
 
 
 # Bootrap the whole procedure as presented in the flowchart
@@ -172,15 +130,6 @@ def procedure_n_rrt(dat):
                      n_rrt_fun(dat, r_vec=['all_1', 'all_2', 'all_3'])]
                     )
     return res
-
-
-# In[27]:
-
-
-procedure_n_rrt(prep_imp_dfs[0])
-
-
-# In[28]:
 
 
 #Bootstrap all datasets
@@ -197,16 +146,9 @@ def runboot(df):
 sb_cf_alldf = [runboot(prep_imp_dfs[i]) for i in range(len(prep_imp_dfs))]
 
 
-# In[29]:
-
-
 est_alldf = np.mean(np.array([sb_cf_alldf[i].ests for i in range(len(sb_cf_alldf))]), axis=0)
 est_alldf
 
 
-# In[30]:
-
-
 emp_alldf = np.mean(np.array([sb_cf_alldf[i].emp for i in range(len(sb_cf_alldf))]), axis=0)
 emp_alldf
-
