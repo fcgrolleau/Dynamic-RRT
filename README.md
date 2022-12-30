@@ -17,7 +17,7 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 - The **Learning** folder includes code related to the section titled “Learning an optimal strategy” in the paper. It contains the following files.
 
- `dataprep_dev.R` details the preprocessing and multiple imputation of the MIMIC data.
+ `dataprep_dev.R` details the preprocessing and multiple imputations of the MIMIC data.
 
  `data_description_dev.R` reproduces Table 1 and Figure S3 (A) for the MIMIC.
  
@@ -33,7 +33,7 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper. It contains the following files.
 
- `akiki_1_2_preprocessing.R` details the preprocessing and multiple imputation of the AKIKI trial data.
+ `akiki_1_2_preprocessing.R` details the preprocessing and multiple imputations of the AKIKI trial data.
 
  `data_description_val.R` reproduces Table 1 and Figure S3 (B) for the AKIKI trial data.
  
@@ -63,16 +63,16 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 ### Sankey diagrams
 
-Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. They were then imported as  resolution independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and colored in Adobe Illustrator.
+Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. Then, HTML files were imported as resolution-independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and colored in Adobe Illustrator.
 
 ### Bootstrapping
 
-Bootstrapping was conduced with the `Speedboot` python library that we developed during the course of this study. It is available on Pypi with documentation available <a href="https://github.com/fcgrolleau/speedboot">here</a>.
+Bootstrapping was conducted with the `Speedboot` python library that we developed during the course of this study. It is available on Pypi with documentation available <a href="https://github.com/fcgrolleau/speedboot">here</a>.
 
 ### Decision support system
 <a href="http://dynamic-rrt.eu"><img src="https://fcgrolleau.github.io/Dynamic-RRT/Shiny/img/img.jpg"/></a>
 
-Availble at <a href="http://dynamic-rrt.eu">http://dynamic-rrt.eu/</a>.
+Available at <a href="http://dynamic-rrt.eu">http://dynamic-rrt.eu/</a>.
 
 ### References
 Grolleau F, Petit F, Gaudry S, Diard E, Quenot JP, Dreyfuss D, Tran VT, and Porcher R.
