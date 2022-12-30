@@ -19,7 +19,7 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
  `dataprep_dev.R` details the preprocessing and multiple imputation of the MIMIC data.
 
- `data_description_dev.R` reproduces Table 1 and Figure S3 (A) for MIMIC.
+ `data_description_dev.R` reproduces Table 1 and Figure S3 (A) for the MIMIC.
  
  `dWOLS.R` details the dWOLS estimation procedure optimal strategy learning in the MIMIC data.
 
@@ -29,7 +29,7 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
  `export_feather.R` export imputed dataframes as feather files for downstream use in python.
 
- `functions.R` contains handy functions `defactorize` and `rubinr` to ”“defactorize” a dataframe and compute Rubin's rule respectively. 
+ `functions.R` contains handy functions `defactorize` and `rubinr` to“defactorize” dataframes and compute Rubin's rule respectively. 
 
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper. It contains the following files.
 
