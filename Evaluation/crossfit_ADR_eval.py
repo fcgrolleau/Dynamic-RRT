@@ -165,9 +165,6 @@ def fitmodels(imp_1):
     return e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_1, U_next_2, U_next_3, rho_1, rho_2
 
 
-# In[7]:
-
-
 def crossfitted_preds(fold, e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_1, U_next_2, U_next_3, rho_1, rho_2):
     """returns crossfitted predictions from previously fitted models"""
     
