@@ -23,28 +23,55 @@ This repository is written and maintained by François Grolleau (francois.grolle
  
  `dWOLS.R` details the dWOLS estimation procedure optimal strategy learning in the MIMIC data.
 
- `figS2_A.R` reproduces Figure S2 (A) for MIMIC (Sankey diagram).
+ `figS2_A.R` reproduces Figure S2 (A) for MIMIC.
 
- `figS2_B.R` reproduces Figure S2 (B) for MIMIC (Sankey diagram).
+ `figS2_B.R` reproduces Figure S2 (B) for MIMIC.
 
- `export_feather.R` export imputed dataframes as feather files for downstream use in python.
+ `export_feather.R` export the imputed development dataframes as feather files for downstream use in python.
 
  `functions.R` contains handy functions `defactorize` and `rubinr` to“defactorize” dataframes and compute Rubin's rule respectively. 
 
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper. It contains the following files.
 
-`algo1.R` implment the EM algorithm from the paper and returns ARE, AIE and MIG estimates 
- ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
- An example is given at the end of the file.
+ `akiki_1_2_preprocessing.R` details the preprocessing and multiple imputation of the AKIKI trial data.
 
-`simulations.R` reproduce the simulations given in the paper
+ `data_description_val.R` reproduces Table 1 and Figure S3 (B) for the AKIKI trial data.
+ 
+ `get_predictions_val.R` get recommendations from the “crude” and “stringent” learned strategies, and export imputed the validation dataframes as feather files for downstream use in python.
 
-`plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper
+ `n_rrt_eval.py` details importance sampling for policy evaluation for the proportion of patients who would initiate renal replacement therapy within three days, using the AKIKI trial data.
 
-- The **Shiny** folder includes the code producing our dynamic decision support system. It contains the following files.
+ `hmor_eval.py` details importance sampling for policy evaluation for hospital mortality, using the AKIKI trial data. This file is adapted from `n_rrt_eval.py`.
 
-### Dynamic decision support system
+ `crossfit_ADR_eval.py` details the cross-fitted advantage doubly robust estimator for strategy evaluation with terminal states for hospital-free days at day 60, using the AKIKI trial data.
+
+ `fig2.R` reproduces Figure 2 of the paper.
+
+ `fig3_A.R` reproduces Figure 3 (A) of the paper.
+
+ `fig3_B.R` reproduces Figure 3 (A) of the paper.
+
+ `fig4.R` reproduces Figure 2 of the paper.
+
+- The **Shiny** folder includes the code producing our dynamic decision support system. It contains the following files and folder.
+
+ `ui.R` for the user interface shiny file.
+
+ `server.R` for the server shiny file.
+
+  `www` a folder that contains the `cress.png` and `uparis.png` logos.
+
+### Sankey diagrams
+
+Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. They were then imported as  resolution independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and then edited in Adobe Illustrator.
+
+### Bootstrapping
+
+Bootstrapping was conduced with the `Speedboot` python library that we developed during the course of this study. It is available Pypi with documentation <a href="https://github.com/fcgrolleau/speedboot">here</a>.
+
+### Decision support system
 Available at <a href="http://dynamic-rrt.eu/">http://dynamic-rrt.eu/</a>
+
 The code for this webapp is available in the **Shiny** folder.
 
 ### References
