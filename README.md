@@ -23,7 +23,7 @@ It contains the following files.
 
  `data_description_dev.R` reproduces Table 1 and Figure S3 (A) for the MIMIC.
  
- `dWOLS.R` details the dWOLS estimation procedure optimal strategy learning in the MIMIC data.
+ `dWOLS.R` details the dWOLS estimation procedure for optimal strategy learning in the MIMIC data.
 
  `figS2_A.R` reproduces Figure S2 (A) for MIMIC.
 
