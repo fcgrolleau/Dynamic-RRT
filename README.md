@@ -34,8 +34,6 @@ It contains the following files.
  `export_feather.R` export the imputed development dataframes as feather files for downstream use in Python.
 
  `crossfit_ADR_eval.py` details the cross-fitted advantage doubly robust estimator for strategy evaluation for hospital-free days at day 60, using the MIMIC data (apparent effect).
-
-
 <br><br>
 
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper.
