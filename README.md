@@ -42,7 +42,7 @@ It contains the following files.
 
  `data_description_val.R` reproduces Table 1 and Figure S3 (B) for the AKIKI trial data.
  
- `get_predictions_val.R` get recommendations from the “crude” and “stringent” learned strategies, and export imputed the validation dataframes as feather files for downstream use in Python.
+ `get_predictions_val.R` get recommendations from the “crude” and “stringent” learned strategies, and export the imputed validation dataframes as feather files for downstream use in Python.
 
  `n_rrt_eval.py` details importance sampling for policy evaluation for the proportion of patients who would initiate renal replacement therapy within three days, using the AKIKI trial data.
 
