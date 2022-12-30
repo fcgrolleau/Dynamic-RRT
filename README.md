@@ -63,7 +63,7 @@ This repository is written and maintained by François Grolleau (francois.grolle
 
 ### Sankey diagrams
 
-Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. They were then imported as  resolution independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and then edited in Adobe Illustrator.
+Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. They were then imported as  resolution independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and colored in Adobe Illustrator.
 
 ### Bootstrapping
 
