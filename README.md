@@ -59,15 +59,17 @@ It contains the following files.
  `fig4.R` reproduces Figure 2 of the paper.
 <br><br>
 
-- The **Shiny** folder includes the code producing our dynamic decision support system.
+- The **Shiny** folder includes the code producing the webapp for our dynamic decision support system.
 
-It contains the following files and folder.
+It contains the following files and folders.
 
  `ui.R` for the user interface shiny file.
 
  `server.R` for the server shiny file.
+ 
+ `www` a folder that contains the `cress.png` and `uparis.png` logos.
 
-  `www` a folder that contains the `cress.png` and `uparis.png` logos.
+ `img` a folder that contains screenshots from our webapp.
 
 ### Sankey diagrams
 
