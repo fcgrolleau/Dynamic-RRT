@@ -3,8 +3,9 @@
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/fcgrolleau/Dynamic-RRT/blob/main/LICENSE)
-[![R badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-blue)](https://www.r-project.org)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org) 
+[![R badge](https://img.shields.io/badge/Build%20with-%20R,%20♥%20and%20python-blue)](https://rstudio.github.io/reticulate/index.html)
+[![R 4.2.1](https://img.shields.io/badge/R-4.2.1-blue.svg)](https://www.r-project.org) 
+[![Python 3.8.8](https://img.shields.io/badge/python-3.8.8-blue.svg)](https://www.python.org) 
 <!-- badges: end -->
 
 This repository reproduces results from the paper *Personalising renal replacement therapy initiation in the intensive care unit: a statistical reinforcement learning-based dynamic strategy with external validation on the AKIKI randomised controlled trials*.
