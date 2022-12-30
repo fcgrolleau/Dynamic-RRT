@@ -30,8 +30,8 @@ This repository is written and maintained by François Grolleau (francois.grolle
  `export_feather.R` export the imputed development dataframes as feather files for downstream use in python.
 
  `functions.R` contains handy functions `defactorize` and `rubinr` to “defactorize” dataframes and compute Rubin's rule respectively. 
+<br><br>
 
-<br>
 - The **Evaluation** folder includes code related to the section titled “External validation” in the paper. It contains the following files.
 
  `akiki_1_2_preprocessing.R` details the preprocessing and multiple imputations of the AKIKI trial data.
@@ -53,8 +53,8 @@ This repository is written and maintained by François Grolleau (francois.grolle
  `fig3_B.R` reproduces Figure 3 (A) of the paper.
 
  `fig4.R` reproduces Figure 2 of the paper.
+<br><br>
 
-<br>
 - The **Shiny** folder includes the code producing our dynamic decision support system. It contains the following files and folder.
 
  `ui.R` for the user interface shiny file.
