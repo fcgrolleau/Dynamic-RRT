@@ -75,7 +75,7 @@ It contains the following files and folders.
 
 ### Sankey diagrams
 
-Sankey diagrams were produced with the files corresponding to Figure 3 and S2 mentioned above. Then, HTML files were imported as resolution-independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and colored in Adobe Illustrator.
+Sankey diagrams were produced with the files aforementioned R scripts corresponding to Figure 3 and S2. The HTML files produced were then imported as resolution-independent images with <a href="https://nytimes.github.io/svg-crowbar/">SVG Crowbar</a> and colored in Adobe Illustrator.
 
 ### Bootstrapping
 
