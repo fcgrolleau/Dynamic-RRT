@@ -137,9 +137,6 @@ def fitmodels(imp_1):
     return e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_1, U_next_2, U_next_3
 
 
-# In[85]:
-
-
 def crossfitted_preds(fold, e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_1, U_next_2, U_next_3):
     """returns crossfitted predictions from previously fitted models"""
     
@@ -178,9 +175,6 @@ def crossfitted_preds(fold, e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_
     return preds_e_1, preds_e_2, preds_e_3, preds_mu_now_1, preds_mu_now_2, preds_mu_now_3, preds_U_next_1, preds_U_next_2, preds_U_next_3
 
 
-# In[86]:
-
-
 def conc_cf_preds(fold_1, fold_2):
     """concatenates crossfitted predictions given two folds"""
 
@@ -203,9 +197,6 @@ def conc_cf_preds(fold_1, fold_2):
     preds_U_next_3 = np.concatenate((f_1_preds_U_next_3, f_2_preds_U_next_3))
     
     return preds_e_1, preds_e_2, preds_e_3, preds_mu_now_1, preds_mu_now_2, preds_mu_now_3, preds_U_next_1, preds_U_next_2, preds_U_next_3
-
-
-# In[87]:
 
 
 def cf_ADR(data, verbose=False):

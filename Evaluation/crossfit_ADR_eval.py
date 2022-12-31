@@ -205,9 +205,6 @@ def crossfitted_preds(fold, e_1, e_2, e_3, mu_now_1, mu_now_2, mu_now_3, U_next_
     return preds_e_1, preds_e_2, preds_e_3, preds_mu_now_1, preds_mu_now_2, preds_mu_now_3, preds_U_next_1, preds_U_next_2, preds_U_next_3, preds_rho_1, preds_rho_2
 
 
-# In[8]:
-
-
 def conc_cf_preds(fold_1, fold_2):
     """concatenates crossfitted predictions given two folds"""
     
@@ -233,9 +230,6 @@ def conc_cf_preds(fold_1, fold_2):
     preds_rho_2 = np.concatenate((f_1_preds_rho_2, f_2_preds_rho_2))
     
     return preds_e_1, preds_e_2, preds_e_3, preds_mu_now_1, preds_mu_now_2, preds_mu_now_3, preds_U_next_1, preds_U_next_2, preds_U_next_3, preds_rho_1, preds_rho_2
-
-
-# In[9]:
 
 
 def cf_ADR(data, verbose=False):
@@ -310,9 +304,6 @@ def cf_ADR(data, verbose=False):
             val_learned-val_treat_all, val_learned_s-val_treat_all, # ref treat all policy 7:9
             val_learned_s-val_learned # ref learned policy 9
            )
-
-
-# In[10]:
 
 
 pol_comp = ["learned_v_none", "learned_stringent_v_none", "clin_v_none", "treat_all_v_none", 
