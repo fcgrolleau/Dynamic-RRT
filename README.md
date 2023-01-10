@@ -8,7 +8,7 @@
 [![Python 3.8.8](https://img.shields.io/badge/Python-3.8.8-blue.svg)](https://www.Python.org) 
 <!-- badges: end -->
 
-This repository reproduces results from the paper *Personalising renal replacement therapy initiation in the intensive care unit: a statistical reinforcement learning-based dynamic strategy with external validation on the AKIKI randomised controlled trials*.
+This repository reproduces results from the paper *Personalising renal replacement therapy initiation in the intensive care unit: a statistical reinforcement learning-based strategy with external validation on the AKIKI randomised controlled trials* (TBA).
 
 ### Authors
 This repository is written and maintained by François Grolleau (francois.grolleau@aphp.fr).
@@ -87,9 +87,6 @@ Bootstrapping was performed with the `Speedboot` Python library that we develope
 Available at <a href="http://dynamic-rrt.eu">http://dynamic-rrt.eu/</a>.
 
 ### References
-Grolleau F, Petit F, Gaudry S, Diard E, Quenot JP, Dreyfuss D, Tran VT, and Porcher R.
-<a href="https://medRxiv.org/">*medRxiv*</a>. 2023.
-
 This applied work heavily relies on the following two technical papers:
 
 - Wallace MP and Moodie EEM. Doubly-robust dynamic treatment regimen estimation via weighted least squares. 
