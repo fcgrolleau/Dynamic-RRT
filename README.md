@@ -7,7 +7,7 @@
 [![Python 3.8.8](https://img.shields.io/badge/Python-3.8.8-blue.svg)](https://www.Python.org) 
 <!-- badges: end -->
 
-This repository reproduces results from the paper *Personalising renal replacement therapy initiation in the intensive care unit: a statistical reinforcement learning-based strategy with external validation on the AKIKI randomised controlled trials* (TBA).
+This repository reproduces results from the paper *Personalizing renal replacement therapy initiation in the intensive care unit: a reinforcement learning-based strategy with external validation on the AKIKI randomized controlled trials* [<a href="https://www.medrxiv.org/content/10.1101/2023.06.13.23291349v1.full">*medRxiv*</a>].
 
 ### Authors
 This repository is written and maintained by François Grolleau (francois.grolleau@aphp.fr).

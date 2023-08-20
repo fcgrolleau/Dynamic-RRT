@@ -1,5 +1,5 @@
-library(Cairo) # comment this when running locally
-options(shiny.usecairo=TRUE) # comment this when running locally
+#library(Cairo) # comment this when running locally
+#options(shiny.usecairo=TRUE) # comment this when running locally
 
 #load("multipanelfig.Rdata")
 load("multipanelfig_bunfix.Rdata")
